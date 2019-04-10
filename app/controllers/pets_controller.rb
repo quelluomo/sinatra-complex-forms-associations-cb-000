@@ -32,8 +32,6 @@ get '/pets' do
     if params["owner"]["name"] != ""
       @pet.owner = Owner.create(name: params["owner"]["name"])
       @pet.save
-      @pet.owner.save
-      binding.pry
     end
     redirect to "pets/#{@pet.id}"
   end
