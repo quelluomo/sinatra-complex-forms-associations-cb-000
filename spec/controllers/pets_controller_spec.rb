@@ -81,7 +81,6 @@ describe "Pets Controller" do
       expect(page).to have_field('owner[name]')
     end
 
-  =begin
 
      it "edit's the pet's name" do
       visit "/pets/#{@pet.id}/edit"
@@ -104,8 +103,6 @@ describe "Pets Controller" do
       click_button "Update Pet"
       expect(Pet.last.owner.name).to eq("Samantha")
     end
-
-    =end
 
 
   end
