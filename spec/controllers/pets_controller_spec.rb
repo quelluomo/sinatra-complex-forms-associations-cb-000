@@ -1,3 +1,5 @@
+=begin
+
 require 'spec_helper'
 
 describe "Pets Controller" do
@@ -108,3 +110,4 @@ describe "Pets Controller" do
   end
 
 end
+=end
